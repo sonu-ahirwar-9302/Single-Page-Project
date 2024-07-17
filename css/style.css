@@ -1,0 +1,1121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    
+    --white-color: #ffffff;
+    --primary-color: #BC6C25;
+    --secondary-color: #DDA15E;
+    --section-bg-color: #b78752;
+    --custom-btn-bg-color: #BC6C25;
+    --custom-btn-bg-hover-color: #DDA15E;
+    --dark-color: #000000;
+    --p-color: #717275;
+    --border-color: #7fffd4;
+    --link-hover-color: #E76F51;
+--bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-link-color: #0d6efd;
+    --bs-link-hover-color: #0a58ca;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fff3cd;
+    --bs-navbar-color: rgba(0, 0, 0, 0.55);
+    --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+    --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+    --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+    
+}
+.header{
+    width: 90%;
+    height: 13vh;
+    background-color: rgba(110, 110, 110, .2);
+    position: fixed;
+    z-index: 1;
+    left: 5%;
+    top: 3%;
+    border-radius: 10px;
+}
+.header .nav{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 110, 110, .2);
+    border-radius: 10px;
+}
+.header .first-nav{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    align-items: center;
+
+}
+.header .first-nav .logo{
+    width: 6%;
+    height: 100%;
+    position: relative;
+    top: 4%;
+    left: 0.5%;
+}
+.header .first-nav .logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+
+}
+.header .first-nav .logo a .para{
+    position: relative;
+    left: 10%;
+}
+.header .first-nav .logo a img{
+    width: 100%;
+}
+#click{
+    display: none;
+}
+.header .first-nav .myicon{
+    display: none;
+}
+.header .first-nav .menu{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+    left: 15%;
+}
+.header .first-nav .menu .menu-1{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.header .first-nav .menu .menu-1 li a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+}
+.header .first-nav .menu .menu-1 li a:hover{
+    color: var(--bs-orange);
+}
+
+.header .first-nav .menu .menu-1 li .para{
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+.header .first-nav .menu .menu-1 li .para:hover{
+    color: var(--bs-orange);
+    padding: 10px 15px;
+    background-color: var(--bs-white);
+    border-radius: 20px;
+}
+@media(max-width:920px){
+    .header .first-nav .logo{
+        width: 10%;
+        height: 100%;
+        position: relative;
+        top: 4%;
+        left: 0.5%;
+    }
+}
+
+/* ------------section home start------------ */
+.home-1{
+    width: 100%;
+    height: 100vh;
+}
+.home-1 .back-image{
+    width: 100%;
+    height: 100%;
+}
+.home-1 .back-image .img{
+    width: 100%;
+    height: 100%;
+}
+.home-1 .back-image .img img{
+    width: 100%;
+    height: 100%;
+}
+.home-1 .back-image .box{
+    width: 250px;
+    height: 45vh;
+    /* background-color: var(--bs-gray-600); */
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    border-radius: 15px;
+    transform: rotate(40deg);
+    background-color: rgba(18, 17, 17, .6);
+
+}
+.home-1 .back-image .container{
+    width: 250px;
+    height: 30vh;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: transparent;
+}
+.home-1 .back-image .container .para-1{
+    width: 100%;
+    font-size: large;
+    color: var(--secondary-color);
+    position: relative;
+    left: 20%;
+    bottom: 10%;
+
+}
+.home-1 .back-image .container h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--bs-white);
+    position: relative;
+    left: 15%;
+    bottom: 5%;
+}
+.home-1 .back-image .container .para-2{
+    font-size: large;
+    color: var(--bs-white);
+    font-family: sans-serif;
+    position: relative;
+    left: 10%;
+}
+.home-1 .back-image .container a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-size: large;
+    font-weight: 600;
+}
+.home-1 .back-image .container .our-story:hover{
+    color: var(--section-bg-color);
+    padding: 8px 10px;
+    background-color: var(--bs-white);
+    border-radius: 20px;
+}
+.home-1 .back-image .container .check_menu{
+    position: relative;
+    left: 35%;
+    padding: 9px 10px;
+    background-color: var(--section-bg-color);
+    border-radius: 20px;
+}
+.home-1 .back-image .container .check_menu:hover{
+    background-color: var(--secondary-color);
+}
+
+/* ------------section home-1 end------------ */
+
+.home-2{
+    width: 100%;
+    height: 100vh;
+     position: relative;
+    z-index: -1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #45301c;
+}
+.home-2 .video-1{
+    width: 40%;
+    height: 90%;
+
+
+}
+.home-2 .video-1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.home-2 .video-1 .start{
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
+    border-radius: 10px;
+}
+.home-2 .video-1 .start .start-1{
+    width: 100%;
+    position: relative;
+    top: 80%;
+    left: 5%;
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
+}
+.home-2 .video-1 .start .h4-1{
+    width: 100%;
+    position: relative;
+    top: 82%;
+    left: 5%;
+    font-size: xx-large;
+    font-weight: 600;
+    color: white;
+}
+
+.home-2 .cafe-kl{
+    width: 40%;
+    height: 60%;
+    position: relative;
+    left: 5%;
+    background-color: transparent;
+}
+.home-2 .cafe-kl .barista{
+    width: 100%;
+    color: white;
+    font-size: large;
+}
+.home-2 .cafe-kl .h1{
+    position: relative;
+    top: 3%;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.home-2 .cafe-kl .para_1{
+    width: 100%;
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+    position: relative;
+    top: 10%;
+}
+.home-2 .cafe-kl .para_2{
+    width: 100%;
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+    position: relative;
+    top: 15%;
+}
+.home-2 .cafe-kl a{
+    text-decoration: none;
+    position: relative;
+}
+.home-2 .cafe-kl a .btn{
+    position: relative;
+    top: 30%;
+    cursor: pointer;
+    left: 10%;
+    padding: 10px 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+.home-2 .cafe-kl a .btn:hover{
+    background-color: var(--bs-white);
+}
+.home-2 .cafe-kl a .btn .para_3{
+    font-size: large;
+    color: white;
+}
+.home-2 .cafe-kl a .btn .para_3:hover{
+    color: var(--primary-color);
+}
+
+
+/* ---------------------------section home-2---------------------- */
+
+.home-3{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--section-bg-color);
+    /* position: ;
+    z-index: -1; */
+}
+.home-3 .hadding{
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+}
+.home-3 .hadding .text{
+    color: white;
+    opacity: .6;
+    font-size: large;
+    position: relative;
+    left: 45%;
+    top: 20%;
+}
+.home-3 .hadding .text_1{
+    width: 50%;
+    top: 30%;
+    position: relative;
+    left: 40%;
+    background-color: transparent;
+    font-size: 52px;
+    color: white;
+
+    /* font-size: large;
+    position: relative;
+    left: 45%;
+    top: 20%; */
+}
+.home-3 .image_1{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    position: relative;
+
+}
+.home-3 .image_1 .first_img{
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+}
+.home-3 .image_1 .first_img a{
+    text-decoration: none;
+
+}
+.home-3 .image_1 .first_img a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.home-3 .image_1 .first_img a .stev{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    /* background-color: red; */
+    border-radius: 15px;
+
+ 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .35), rgba(188, 108, 37, 1));
+
+}
+.home-3 .image_1 .first_img a .stev .text_2{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    position: relative;
+    top: 70%;
+    left: 5%;
+}
+.home-3 .image_1 .first_img a .stev .para_4{
+    color: white;
+    opacity: .8;
+    position: relative;
+    top: 75%;
+    left: 5%;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+
+
+.home-3 .image_1 .first_img_1{
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+}
+.home-3 .image_1 .first_img_1 a{
+    text-decoration: none;
+
+}
+.home-3 .image_1 .first_img_1 a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.home-3 .image_1 .first_img_1 a .stev{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    /* background-color: red; */
+    border-radius: 15px;
+
+ 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .35), rgba(188, 108, 37, 1));
+
+}
+.home-3 .image_1 .first_img_1 a .stev .text_2{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    position: relative;
+    top: 70%;
+    left: 5%;
+}
+.home-3 .image_1 .first_img_1 a .stev .para_4{
+    color: white;
+    opacity: .8;
+    position: relative;
+    top: 75%;
+    left: 5%;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.home-3 .image_1 .first_img_2{
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+}
+.home-3 .image_1 .first_img_2 a{
+    text-decoration: none;
+
+}
+.home-3 .image_1 .first_img_2 a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.home-3 .image_1 .first_img_2 a .stev{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    /* background-color: red; */
+    border-radius: 15px;
+
+ 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .35), rgba(188, 108, 37, 1));
+
+}
+.home-3 .image_1 .first_img_2 a .stev .text_2{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    position: relative;
+    top: 70%;
+    left: 5%;
+}
+.home-3 .image_1 .first_img_2 a .stev .para_4{
+    color: white;
+    opacity: .8;
+    position: relative;
+    top: 75%;
+    left: 5%;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+
+
+
+.home-3 .image_1 .first_img_3{
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+}
+.home-3 .image_1 .first_img_3 a{
+    text-decoration: none;
+
+}
+.home-3 .image_1 .first_img_3 a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.home-3 .image_1 .first_img_3 a .stev{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    /* background-color: red; */
+    border-radius: 15px;
+
+ 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .35), rgba(188, 108, 37, 1));
+
+}
+.home-3 .image_1 .first_img_3 a .stev .text_2{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    position: relative;
+    top: 70%;
+    left: 5%;
+}
+.home-3 .image_1 .first_img_3 a .stev .para_4{
+    color: white;
+    opacity: .8;
+    position: relative;
+    top: 75%;
+    left: 5%;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+/* section home-3 end */
+
+.home-4{
+    width: 100%;
+    height: 120vh;
+    background-image: url('../assets/image/pexels-veronica-1074900-5594515.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: var(--bs-code-color); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    gap: 5%;
+}
+.home-4 img{
+    width: 100%;
+    height: 100%;
+}
+.home-4 .menu-1{
+    width: 40%;
+    height: 80%;
+    background-color: rgba(51, 0, 25, .3);
+    border-radius: 20px;
+    
+}
+.home-4 .menu-1 .breakfast{
+    width: 60%;
+    height: 10vh;
+    background-color: transparent;
+    position: relative;
+    left: 40%;
+    top: 5%;
+}
+.home-4 .menu-1 .breakfast .par{
+    margin-left: 20px;
+    color: white;
+    opacity: .8;
+}
+.home-4 .menu-1 .breakfast .h1{
+    font-size: 35px;
+    color: white;
+}
+.home-4 .menu-1 .pan{
+    width: 90%;
+    height: 13vh;
+    background-color: transparent;
+    position: relative;
+    left: 5%;
+    top: 13%;
+    
+}
+.home-4 .menu-1 .pan .cake{
+
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.home-4 .menu-1 .pan .cake .p1{
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+}
+.home-4 .menu-1 .pan .cake ins{
+    color: var(--bs-orange);
+    font-size: x-large;
+    font-weight: 600;
+    text-decoration: none;
+}
+.home-4 .menu-1 .pan .fresh{
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+}
+.home-4 .menu-1 .pan .fresh .p2{
+    position: relative;
+    top: 15%;
+    font-size: large;
+    color: white;
+    opacity: .6;
+}
+
+
+
+
+
+
+
+
+
+.home-4 .menu-2{
+    width: 40%;
+    height: 80%;
+    background-color: rgba(51, 0, 25, .3);
+    border-radius: 20px;
+    
+}
+.home-4 .menu-2 .breakfast{
+    width: 60%;
+    height: 10vh;
+    background-color: transparent;
+    position: relative;
+    left: 40%;
+    top: 5%;
+    
+}
+.home-4 .menu-2 .breakfast .par{
+    margin-left: 20px;
+    color: white;
+    opacity: .8;
+
+}
+.home-4 .menu-2 .breakfast .h1{
+    font-size: 35px;
+    color: white;
+    position: relative;
+    left: 5%;
+}
+.home-4 .menu-2 .pan{
+    width: 90%;
+    height: 13vh;
+    background-color: transparent;
+    position: relative;
+    left: 5%;
+    top: 13%;
+    
+}
+.home-4 .menu-2 .pan .cake{
+
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.home-4 .menu-2 .pan .cake .p1{
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+}
+.home-4 .menu-2 .pan .cake ins{
+    color: var(--bs-orange);
+    font-size: x-large;
+    font-weight: 600;
+    text-decoration: none;
+}
+.home-4 .menu-2 .pan .fresh{
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+}
+.home-4 .menu-2 .pan .fresh .p2{
+    position: relative;
+    top: 15%;
+    font-size: large;
+    color: white;
+    opacity: .6;
+}
+
+
+/* -----------section home-3 end--------------- */
+.home-5{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('../assets/image/pexels-photo-2788792.jpeg'); */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
+}
+.home-5 .contact{
+    width: 40%;
+    height: 80%;
+    background-color: transparent;
+}
+.home-5 .contact .hello{
+    width: 100%;
+    height: 20%;
+}
+.home-5 .contact .hello .say{
+    font-size: large;
+    font-family: monospace;
+    color: white;
+    opacity: .9;
+}
+.home-5 .contact .hello .h1_1{
+    font-size: 42px;
+    font-weight: 800;
+    color: white;
+    position: relative;
+    top: 10%;
+}
+.home-5 .contact form{
+    width: 100%;
+    height: 80%;
+}
+
+.home-5 .contact form .name{
+    font-size: x-large;
+    color: white;
+}
+.home-5 .contact form .input_1{
+    width: 95%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+    left: .3%;
+    top: 3%;
+}
+.home-5 .contact form .input_1:hover{
+    background-color: var(--bs-orange);
+}
+
+.home-5 .contact form .name-1{
+    font-size: x-large;
+    color: white;
+    position: relative;
+    top: 7%;
+}
+.home-5 .contact form .input_2{
+    width: 95%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+    left: .3%;
+    top: 10%;
+}
+.home-5 .contact form .input_2:hover{
+    background-color: var(--bs-orange);
+ 
+}
+
+.home-5 .contact form .help{
+    font-size: x-large;
+    color: white;
+    position: relative;
+    top: 15%;
+}
+.home-5 .contact form .textarea{
+    width: 95%;
+    height: 10%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+    left: .3%;
+    top: 20%;
+    background-color: white;
+}
+.home-5 .contact form .textarea:hover{
+    background-color: var(--bs-orange);
+
+}
+
+.home-5 .contact form .textarea .input_3{
+    width: 100%;
+    height: 100%;
+    /* padding: 60px 10px; */
+    /* border-radius: 10px; */
+    border: none;
+    outline: none;
+    position: relative;
+    left: .3%;
+    background-color: transparent;
+    /* top: 20%; */
+}
+.home-5 .contact form .input_3:hover{
+    background-color: var(--bs-orange);
+
+}
+::placeholder{
+    font-size: large;
+
+}
+
+.home-5 .contact form a{
+    text-decoration: none;
+    position: relative;
+    top: 30%;
+    width: 40%;
+    left: 5%;
+    background-color: transparent;
+}
+.home-5 .contact form a .btn_1{
+    width: 50%;
+    height: 10%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--bs-orange);
+    position: relative;
+    left: 20%;
+    border: none;
+
+
+}
+.home-5 .contact form a .btn_1:hover{
+    background-color: var(--bs-white);
+}
+.home-5 .contact form a .btn_1 .send{
+    font-size: large;
+    font-weight: 700;
+    color: white;
+}
+.home-5 .contact form a .btn_1 .send:hover{
+    color: var(--bs-orange);
+}
+
+/* section home-5 end */
+
+
+
+footer{
+    width: 100%;
+    height: 70vh;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+footer .where{
+    width: 30%;
+    height: 40%;
+    background-color: transparent;
+}
+footer .where .find{
+    color: white;
+    opacity: .6;
+}
+footer .where .h3_1{
+    width: 100%;
+    color: white;
+    position: relative;
+    top: 10%;
+}
+footer .where .icon{
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+    position: relative;
+    top: 20%;
+}
+footer .where .icon a i{
+   color: white;
+   font-size: xx-large;
+}
+footer .where .icon a .myicon_1{
+    position: relative;
+    left: 27%;
+}
+footer .where .icon a .myicon_2{
+    position: relative;
+    left: 55%;
+}
+
+footer .cont{
+    width: 30%;
+    height: 40%;
+    background-color: transparent;
+}
+footer .cont ins{
+    text-decoration: none;
+}
+footer .cont .con{
+    font-size: large;
+    color: white;
+    opacity: .3;
+}
+footer .cont .phone{
+    position: relative;
+    top: 12%;
+    color: white;
+    font-size: x-large;
+}
+footer .cont .phone .ins_1{
+    font-size: smaller;
+    
+}
+footer .cont .phone .ins_1 a{
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+}
+footer .cont .phone .ins_1 a:hover{
+    color: white;
+    opacity: 1;
+}
+footer .cont .email{
+    position: relative;
+    top: 30%;
+    font-size: x-large;
+    color: white;
+}
+footer .cont .email .em{
+    opacity: .5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer .hour{
+    width: 30%;
+    height: 40%;
+    background-color: transparent;
+}
+footer .hour .open{
+    font-size: x-large;
+    color: white;
+    opacity: .6;
+}
+footer .hour .mon{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .hour .mon .day{
+    font-size: large;
+    color: white;
+    opacity: .6;
+}
+footer .hour .mon span{
+    width: 40%;
+    height: 20%;
+    border-bottom: 2px solid white;
+}
+footer .hour .mon .time{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+
+
+footer .hour .satur{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .hour .satur .day{
+    font-size: large;
+    color: white;
+    opacity: .6;
+}
+footer .hour .satur .time{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+footer .hour .satur span{
+    width: 50%;
+    height: 20%;
+    border-bottom: 2px solid white;
+}
+
+footer .hour .sun{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .hour .sun span{
+    width: 60%;
+    height: 20%;
+    border-bottom: 2px solid white;
+}
+footer .hour .sun .day{
+    font-size: large;
+    color: white;
+    opacity: .6;
+}
+footer .hour .sun .close{
+    color: white;
+    font-size: large;
+}
